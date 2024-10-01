@@ -1,9 +1,11 @@
 
-
 function App() {
+  const clickHandler = (uname, e) => {
+    console.log(uname, e);
+  }
   return (
     <div className="App">
-      快乐学习react
+      <button onClick={(e) => clickHandler('liz', e)}>点我</button>
     </div>
   );
 }
