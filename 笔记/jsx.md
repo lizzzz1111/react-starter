@@ -52,5 +52,28 @@ const logIn = true;
   );
 ````
 
-### [BABEL](https://www.babeljs.cn/docs/)
+#### [BABEL](https://www.babeljs.cn/docs/)
 Babel 是一个工具链，主要用于将采用 ECMAScript 2015+ 语法编写的代码转换为向后兼容的 JavaScript 语法，以便能够运行在当前和旧版本的浏览器或其他环境中。
+
+# react组件样式控制
+1.  行内样式
+````
+      <button style={{ color: 'red' }} >{count}</button>
+
+````
+或者
+```` 
+      const style = {
+          color: 'red'
+        }
+      <button style={style}>{count}</button>
+
+````
+
+2.class类名控制
+对应到**className**
+````
+     <button className="foo">{count}</button>
+````
+
+
